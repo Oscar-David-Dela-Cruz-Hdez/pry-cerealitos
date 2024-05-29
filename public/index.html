@@ -17,38 +17,35 @@
             <button type="submit">Buscar</button>
         </form>
         <nav>
-            <a href="./productos.html"></a>
+            <a href="./productos.html">Productos</a>
             <a href="http://">quienes somos</a>
             <a href="/public/inicioSesion.html">Inicio de sesion</a>
             <a href="/public/registro.html">Registro</a>
         </nav>
         
     </header>
-    <main>
-        <!-- aun le falta hacerse dinamico respecto a la cantidad de productos que haya -->
-        <div>
-            <div class="tarjeta_producto">
-                <img src="/resources/img1.jpg" alt="Imagen del producto" class="imagen-producto" onclick="mostrarDetallesProducto('Nombre del Producto 1', '/resources/product1.jpg', 'Descripción del producto 1.', '$150')">
-                <h2 class="nom-P">Nombre del Producto</h2>
-                <p class="desc-P">Descripción del producto.</p>
-                <p class="prec-P">$150</p>
-                <button class="btn-comprar">Comprar</button>
+<!-- aun le falta hacerse dinamico respecto a la cantidad de productos que haya -->
+
+<!--TAMBIEN MODIFIQUE ESTO :3 junto con el modal -->
+    <main class="product-list">
+            <div class="product-card">
+                <img src="../img/GOJ7mGsWoAAVHtm.jpg" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p class="price">$50</p>
+                <p class="stock">En existencia</p>
             </div>
-            <div class="tarjeta_producto">
-                <img src="/resources/img2.jpg" alt="Imagen del producto" class="imagen-producto" onclick="mostrarDetallesProducto('Nombre del Producto 1', '/resources/product1.jpg', 'Descripción del producto 1.', '$150')">
-                <h2 class="nom-P">Nombre del Producto</h2>
-                <p class="desc-P">Descripción del producto.</p>
-                <p class="prec-P">$150</p>
-                <button class="btn-comprar">Comprar</button>
+            <div class="product-card">
+                <img src="../img/GOJ7mGsWoAAVHtm.jpg" alt="Producto 2">
+                <h3>Producto 2</h3>
+                <p class="price">$60</p>
+                <p class="stock">En existencia</p>
             </div>
-            <div class="tarjeta_producto">
-                <img src="/resources/img3.jpg" alt="Imagen del producto" class="imagen-producto" onclick="mostrarDetallesProducto('Nombre del Producto 1', '/resources/product1.jpg', 'Descripción del producto 1.', '$150')">
-                <h2 class="nom-P">Nombre del Producto</h2>
-                <p class="desc-P">Descripción del producto.</p>
-                <p class="prec-P">$150</p>
-                <button class="btn-comprar">Comprar</button>
+            <div class="product-card">
+                <img src="../img/GOJ7mGsWoAAVHtm.jpg" alt="Producto 3">
+                <h3>Producto 3</h3>
+                <p class="price">$70</p>
+                <p class="stock">En existencia</p>
             </div>
-        </div>
     </main>
     
     <!-- el Modal -->

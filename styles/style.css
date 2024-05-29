@@ -53,57 +53,49 @@ header nav a {
     cursor: pointer;
 }
 
-/* Tarjetas de producto */
-main {
+/* Tarjetas de producto */ /*<----modifique esta seccion de css*/
+.main .product-list {
+    width: 85%;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    grid-template-columns: auto;
+    gap: 10px;
+    box-sizing: border-box;
+
 }
 
-.tarjeta_producto {
+.product-card {
     background-color: #FFFFFF;
-    border: 1px solid #E0E0E0;
-    padding: 20px;
-    margin-bottom: 20px;
-    width: 28%;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 1%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
-.tarjeta_producto img.product-image {
+.product-card img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
-.nom-P {
-    color: #424242;
-    font-size: 1.5rem;
-    margin-top: 0;
+.product-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
 }
 
-.desc-P {
-    color: #424242;
-    font-size: 1rem;
+.product-card p {
+    margin: 5px 0;
 }
 
-.prec-P {
-    color: #424242;
-    font-size: 1.25rem;
+.product-card .price {
+    color: #4CAF50;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 
-.btn-comprar {
-    background-color: #FFC107;
-    color: #424242;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.btn-comprar:hover {
-    background-color: #FFD54F; /* Color amarillo dorado más claro al pasar el mouse */
+.product-card .stock {
+    color: #888;
 }
 
 /* Footer */
