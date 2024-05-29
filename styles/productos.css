@@ -1,0 +1,19 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #FFFFFF; /* Fondo principal */
+    color: #424242; /* Texto principal */
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #4CAF50; /* Verde Natural */
+    color: #FFFFFF;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
