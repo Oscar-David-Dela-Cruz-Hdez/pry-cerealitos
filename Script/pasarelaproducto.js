@@ -1,4 +1,4 @@
-// Obtener elementos del DOM
+
 const modal = document.getElementById('productModal');
 const modalImage = document.getElementById('modalImage');
 const modalTitle = document.getElementById('modalTitle');
@@ -8,7 +8,7 @@ const modalStock = document.getElementById('modalStock');
 const addToCartButton = document.getElementById('addToCartButton');
 const closeModal = document.getElementsByClassName('close')[0];
 
-// Datos de ejemplo de productos (puedes reemplazarlos con tus datos reales)
+
 const products = [
     { id: 1, name: "Producto 1", image: "../img/GOJ7mGsWoAAVHtm.jpg", description: "Descripción del Producto 1", price: 50, stock: 10 },
     { id: 2, name: "Producto 2", image: "../img/GOJ7mGsWoAAVHtm.jpg", description: "Descripción del Producto 2", price: 60, stock: 8 },
@@ -42,14 +42,14 @@ window.onclick = function(event) {
     }
 }
 
-// Añadir evento a cada tarjeta de producto
+
 document.querySelectorAll('.product-card').forEach((card, index) => {
     card.addEventListener('click', () => {
         openModal(products[index]);
     });
 });
 
-// Filtrado de precios
+// filtrarnpor precio
 const priceRange = document.getElementById('price-range');
 const priceDisplay = document.getElementById('price-display');
 
@@ -57,7 +57,7 @@ priceRange.addEventListener('input', () => {
     priceDisplay.textContent = `$${priceRange.value}`;
 });
 
-// Filtrado de productos
+//filtrar productos
 const filterForm = document.getElementById('filter-form');
 
 filterForm.addEventListener('submit', (e) => {
@@ -84,10 +84,10 @@ filterForm.addEventListener('submit', (e) => {
     displayProducts(filteredProducts);
 });
 
-// Función para mostrar productos
+//para mostrar produtcos
 function displayProducts(products) {
     const productList = document.querySelector('.product-list');
-    productList.innerHTML = ''; // Limpiar lista de productos
+    productList.innerHTML = ''; 
     
     products.forEach(product => {
         const productCard = document.createElement('div');
@@ -107,5 +107,5 @@ function displayProducts(products) {
     });
 }
 
-// Inicializar con todos los productos
+
 displayProducts(products);
