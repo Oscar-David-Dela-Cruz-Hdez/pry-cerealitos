@@ -10,9 +10,9 @@ const closeModal = document.getElementsByClassName('close')[0];
 
 
 const products = [
-    { id: 1, name: "Producto 1", image: "../img/GOJ7mGsWoAAVHtm.jpg", description: "Descripción del Producto 1", price: 50, stock: 10 },
-    { id: 2, name: "Producto 2", image: "../img/GOJ7mGsWoAAVHtm.jpg", description: "Descripción del Producto 2", price: 60, stock: 8 },
-    { id: 3, name: "Producto 3", image: "../img/GOJ7mGsWoAAVHtm.jpg", description: "Descripción del Producto 3", price: 70, stock: 15 },
+    { id: 1, name: "Producto 1", image: "../img/sticker-fan_13451696_a.png", description: "Descripción del Producto 1", price: 50, stock: 10 },
+    { id: 2, name: "Producto 2", image: "../img/sticker-fan_13451696_a.png", description: "Descripción del Producto 2", price: 60, stock: 8 },
+    { id: 3, name: "Producto 3", image: "../img/sticker-fan_13451696_a.png", description: "Descripción del Producto 3", price: 70, stock: 15 },
 ];
 
 // Función para abrir el modal

@@ -80,7 +80,7 @@ closeModal.onclick = function() {
     modal.style.display = "none";
 }
 
-// Cerrar el modal al hacer clic fuera del contenido
+// Cerrar el modal al hacer clic fuera del contenido osease en la pagina
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
