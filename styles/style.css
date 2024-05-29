@@ -113,43 +113,46 @@ header nav a {
 
 .modal-content {
     background-color: #fefefe;
-    margin: 10% auto;
+    margin: 10% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 90%;
-    max-width: 600px;
-    border-radius: 10px;
+    width: 300%;
+    max-width: 300px;
+    border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    text-align: center;
+    position: relative; 
 }
 
 .close {
     color: #aaa;
-    float: right;
+    position: absolute;
+    top: 10px;
+    right: 15px;
     font-size: 28px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
     color: black;
     text-decoration: none;
-    cursor: pointer;
 }
 
 .modal img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
     border-radius: 5px;
+    margin-bottom: 1%;
 }
 
 .modal h3 {
     font-size: 1.5rem;
-    margin: 10px 0;
+    margin-bottom: 2px;
 }
 
 .modal p {
-    margin: 5px 0;
+    margin: 2px 0;
 }
 
 .modal .price {
@@ -160,6 +163,21 @@ header nav a {
 
 .modal .stock {
     color: #888;
+    margin-bottom: 3px;
+}
+
+.modal label {
+    display: inline-block; /* estoa wea es para que este en la misma linea al input */
+    margin-bottom: 10px;
+}
+
+.modal input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100px;
+    font-size: 1rem;
+    display: inline-block; /* x d*/
 }
 
 .modal button {
@@ -175,9 +193,10 @@ header nav a {
 .modal button:hover {
     background-color: #45a049;
 }
+
 /* Footer */
 footer {
-    background-color: #8D6E63; /* Marrón Claro */
+    background-color: #8D6E63; /* Marrón Claro pueblo MARRON */
     color: #FFFFFF;
     padding: 10px;
     text-align:justify;

@@ -52,17 +52,19 @@
     </main>
     
     <!-- Modal -->
-<div id="productModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <img id="modalImage" src="" alt="Product Image">
-        <h3 id="modalTitle"></h3>
-        <p id="modalDescription"></p>
-        <p class="price" id="modalPrice"></p>
-        <p class="stock" id="modalStock"></p>
-        <button id="addToCartButton">Agregar al carrito</button>
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="Product Image">
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+            <p class="price" id="modalPrice"></p>
+            <p class="stock" id="modalStock"></p>
+            <label for="quantity">Cantidad:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1">
+            <button id="addToCartButton">Agregar al carrito</button>
+        </div>
     </div>
-</div>
 
     <footer>
         <center>
