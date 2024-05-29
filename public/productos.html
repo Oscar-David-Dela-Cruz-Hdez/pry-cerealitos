@@ -8,9 +8,9 @@
 </head>
 <body>
     <header>
-        <h1>Cerealitos</h1>
-        <div>
-            <!-- <img src="../img/GOJ7mGsWoAAVHtm.jpg" alt=""> -->
+        <div class="logo-container">
+            <h1>Cerealitos</h1>
+            <img src="../img/GOJ7mGsWoAAVHtm.jpg" alt="Logo de Cerealitos" class="logo">
         </div>
         <form class="busqueda">
             <input type="search" id="barra_busqueda" placeholder="Buscar barritas de cereal">
@@ -18,12 +18,41 @@
         </form>
         <nav>
             <a href="./productos.html"></a>
-            <a href="http://">quienes somos</a>
-            <a href="/public/inicioSesion.html">Inicio de sesion</a>
+            <a href="http://">Quienes somos</a>
+            <a href="/public/inicioSesion.html">Inicio de sesión</a>
             <a href="/public/registro.html">Registro</a>
         </nav>
-        
     </header>
-    
+
+    <div class="container">
+        <aside class="filters">
+            <h2>Filtros</h2>
+            <form id="filter-form">
+                <div class="filter-group">
+                    <h3>Tamaño</h3>
+                    <label><input type="checkbox" name="size" value="all"> Todos</label><br>
+                    <label><input type="checkbox" name="size" value="small"> Pequeños</label><br>
+                    <label><input type="checkbox" name="size" value="medium"> Medianos</label><br>
+                    <label><input type="checkbox" name="size" value="large"> Grandes</label><br>
+                </div>
+                <div class="filter-group">
+                    <h3>Estado</h3>
+                    <label><input type="checkbox" name="state" value="new"> Nuevos</label><br>
+                    <label><input type="checkbox" name="state" value="discount"> Descuentos</label><br>
+                </div>
+                <div class="filter-group">
+                    <h3>Precio límite</h3>
+                    <input type="range" id="price-range" name="price" min="10" max="1000" value="500">
+                    <div id="price-display">$...</div>
+                </div>
+                <button type="submit" class="filter-button">Filtrar</button>
+            </form>
+        </aside>
+        <main class="product-list">
+            <!-- Aquí se mostrarán los productos filtrados -->
+        </main>
+    </div>
+
+    <script src="../Script/pasarelaproducto.js"></script>
 </body>
 </html>
