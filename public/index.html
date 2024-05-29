@@ -19,28 +19,29 @@
         <nav>
             <a href="http://">quienes somos</a>
             <a href="/public/inicioSesion.html">Inicio de sesion</a>
-            <a href="http://">Registro</a>
+            <a href="/public/registro.html">Registro</a>
         </nav>
         
     </header>
     <main>
+        <!-- aun le falta hacerse dinamico respecto a la cantidad de productos que haya -->
         <div>
             <div class="tarjeta_producto">
-                <img src="/resources/" alt="Imagen del producto" class="product-image">
+                <img src="/resources/img1.jpg" alt="Imagen del producto" class="imagen-producto" onclick="mostrarDetallesProducto('Nombre del Producto 1', '/resources/product1.jpg', 'Descripción del producto 1.', '$150')">
                 <h2 class="nom-P">Nombre del Producto</h2>
                 <p class="desc-P">Descripción del producto.</p>
                 <p class="prec-P">$150</p>
                 <button class="btn-comprar">Comprar</button>
             </div>
             <div class="tarjeta_producto">
-                <img src="/resources/" alt="Imagen del producto" class="product-image">
+                <img src="/resources/img2.jpg" alt="Imagen del producto" class="imagen-producto" onclick="mostrarDetallesProducto('Nombre del Producto 1', '/resources/product1.jpg', 'Descripción del producto 1.', '$150')">
                 <h2 class="nom-P">Nombre del Producto</h2>
                 <p class="desc-P">Descripción del producto.</p>
                 <p class="prec-P">$150</p>
                 <button class="btn-comprar">Comprar</button>
             </div>
             <div class="tarjeta_producto">
-                <img src="/resources/" alt="Imagen del producto" class="product-image">
+                <img src="/resources/img3.jpg" alt="Imagen del producto" class="imagen-producto" onclick="mostrarDetallesProducto('Nombre del Producto 1', '/resources/product1.jpg', 'Descripción del producto 1.', '$150')">
                 <h2 class="nom-P">Nombre del Producto</h2>
                 <p class="desc-P">Descripción del producto.</p>
                 <p class="prec-P">$150</p>
@@ -49,6 +50,17 @@
         </div>
     </main>
     
+    <!-- el Modal -->
+    <div id="modalDetalles" class="modal">
+        <div class="contenedor-modal">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <h2 id="modalNombreProducto"></h2>
+            <img id="modalImagenProducto" src="" alt="">
+            <p id="modalDescripcionProducto"></p>
+            <p id="modalPrecioProducto"></p>
+        </div>
+    </div>
+
     <footer>
         <center>
         <div class="contenedor-abajo">
@@ -79,6 +91,7 @@
             </div>
         </div></center>
     </footer>
-    
+    <!-- El script para el modal -->
+    <script src="/Script/vistaProducto.js"></script> 
 </body>
 </html>
