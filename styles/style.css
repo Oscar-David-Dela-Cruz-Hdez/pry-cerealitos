@@ -54,15 +54,15 @@ header nav a {
 }
 
 /* Tarjetas de producto */ /*<----modifique esta seccion de css*/
-.main .product-list {
-    width: 85%;
+
+.product-list {
+    width: 60%;
     padding: 10px;
     display: flex;
     justify-content: center;
-    grid-template-columns: auto;
+    align-items: center; /* Para centrar verticalmente */
     gap: 10px;
     box-sizing: border-box;
-
 }
 
 .product-card {
