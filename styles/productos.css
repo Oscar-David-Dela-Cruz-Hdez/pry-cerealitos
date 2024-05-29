@@ -122,3 +122,45 @@ header nav a {
     width: 85%;
     padding: 20px;
 }
+/*lista de productos*/
+.product-list {
+    width: 85%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.product-card {
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+}
+
+.product-card p {
+    margin: 5px 0;
+}
+
+.product-card .price {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.product-card .stock {
+    color: #888;
+}
