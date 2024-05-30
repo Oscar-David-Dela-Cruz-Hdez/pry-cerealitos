@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recuperacion de contraseña</title>
+    <title>Recuperación de Contraseña</title>
     <link rel="stylesheet" href="/styles/reccontra.css">
 </head>
 <body>
@@ -18,34 +18,51 @@
         </form>
         <nav>
             <a href="./index.html">Inicio</a>
+            <a href="/public/productos.html">Productos</a>
             <a href="/public/quienesSomos.html">Quienes somos</a>
             <a href="/public/inicioSesion.html">Inicio de sesión</a>
             <a href="/public/registro.html">Registro</a>
         </nav>
     </header>
     <div class="contenedor-recuperacion">
-        <form class="formulario-recueracion">
+        <form class="formulario-recuperacion">
             <h2>Recuperación de Contraseña</h2>
-
             <div class="grupo-formulario">
-                <label for="username">Intoduce la respuesta</label>
-                <input type="text" id="texto-recupracion" name="recuperacion" required>
-
-                <label for="password">Intoduce la contraseña</label>
-                <input type="password" id="contrasenia-nueva" name="password" required>
+                <label for="respuesta">Introduce la respuesta</label>
+                <input type="text" id="respuesta" name="recuperacion" required>
             </div>
-            <button type="submit">Finalizar</button>
+            <button type="button" id="verificar-respuesta">Finalizar</button>
         </form>
     </div>
+
+    <!-- Modal -->
+    <div id="modal-cambiar-contrasena" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar">&times;</span>
+            <h2>Cambiar Contraseña</h2>
+            <form class="formulario-cambio-contrasena">
+                <div class="grupo-formulario">
+                    <label for="nueva-contrasena">Nueva Contraseña</label>
+                    <input type="password" id="nueva-contrasena" name="nueva-contrasena" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="confirmar-contrasena">Confirmar Contraseña</label>
+                    <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required>
+                </div>
+                <button type="button" class="btn-cambiar-contrasena">Cambiar Contraseña</button>
+            </form>
+        </div>
+    </div>
+
     <footer>
         <center>
         <div class="contenedor-abajo">
             <div class="seccion-contacto">
                 <h2>Contacto</h2>
                 <ul>
-                    <li><a href="http://">Facebook</a></li>
-                    <li><a href="http://">Whatsapp</a></li>
-                    <li><a href="http://">Teléfono</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Whatsapp</a></li>
+                    <li><a href="#">Teléfono</a></li>
                 </ul>
             </div>
             <div class="seccion-enlaces">
@@ -60,12 +77,14 @@
             <div class="seccion-metodos">
                 <h2>Métodos de pago</h2>
                 <ul>
-                    <li><a href="http://">Tarjetas de crédito/débito</a></li>
-                    <li><a href="http://">Pago en efectivo</a></li>
-                    <li><a href="http://">Pago a meses</a></li>
+                    <li><a href="#">Tarjetas de crédito/débito</a></li>
+                    <li><a href="#">Pago en efectivo</a></li>
+                    <li><a href="#">Pago a meses</a></li>
                 </ul>
             </div>
         </div></center>
     </footer>
+
+    <script src="/Script/reccontra.js"></script>
 </body>
 </html>
