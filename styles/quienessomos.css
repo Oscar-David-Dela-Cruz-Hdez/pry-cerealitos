@@ -1,0 +1,141 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5; /* Fondo principal */
+    color: #424242; /* Texto principal */
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #4CAF50; /* Verde Natural */
+    color: #FFFFFF;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+    height: 50px; /* Ajusta el tamaño según sea necesario */
+    border-radius: 50%;
+    margin-left: 10px; /* Reduce el margen izquierdo para acercarlo */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Formulario de búsqueda */
+.busqueda {
+    display: flex;
+    align-items: center;
+}
+
+.busqueda input[type="search"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 250px;
+}
+
+.busqueda button {
+    background-color: #FFC107; /* Amarillo Dorado */
+    color: #424242;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.busqueda button:hover {
+    background-color: #FFB300; /* Color de hover */
+}
+
+/* Secciones principales */
+main {
+    padding: 20px;
+}
+
+.section {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+.section p {
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #8D6E63; /* Marrón Claro pueblo MARRON */
+    color: #FFFFFF;
+    padding: 10px;
+    text-align:justify;
+    display:flexbox;
+    justify-content: space-around; /* Alineación horizontal */
+    margin-top: auto;
+}
+
+.contenedor-abajo {
+    display: flex;
+    flex-wrap: wrap; /* Asegura que los elementos se ajusten si hay demasiados */
+}
+
+.seccion-contacto,
+.seccion-enlaces,
+.seccion-metodos {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    margin: 0 10px; /* Espacio entre secciones */
+}
+
+footer h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
