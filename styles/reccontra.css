@@ -72,26 +72,18 @@ header nav a:hover {
     background-color: #FFB300; /* Color de hover */
 }
 
-/* Contenedor de recuperación */
+/* Contenedor de recuperación de contraseña */
 .contenedor-recuperacion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-}
-
-.formulario-recuperacion {
+    max-width: 600px;
+    margin: 20px auto;
     background-color: #FFFFFF;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .formulario-recuperacion h2 {
-    margin-top: 0;
-    color: #4CAF50;
+    margin-bottom: 20px;
 }
 
 .grupo-formulario {
@@ -103,16 +95,31 @@ header nav a:hover {
     margin-bottom: 5px;
 }
 
-.grupo-formulario input {
+.grupo-formulario input[type="text"],
+.grupo-formulario input[type="password"] {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #CCCCCC;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
-/* Modal */
+.grupo-formulario button {
+    background-color: #4CAF50; /* Verde Natural */
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.grupo-formulario button:hover {
+    background-color: #45a049; /* Verde más oscuro */
+}
+
+/* Modal de cambio de contraseña */
 .modal {
-    display: none; /* Oculto por defecto */
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -120,34 +127,27 @@ header nav a:hover {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente */
 }
 
 .modal-contenido {
     background-color: #FFFFFF;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
     border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    text-align: center;
 }
 
-.cerrar {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+.modal-contenido h2 {
+    margin-bottom: 20px;
 }
 
-.cerrar:hover,
-.cerrar:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+.modal-contenido .grupo-formulario input[type="password"] {
+    margin-bottom: 15px;
 }
-
-/* Footer */
+/*Aqui va lo del footer*/
 footer {
     background-color: #8D6E63; /* Marrón Claro pueblo MARRON */
     color: #FFFFFF;
@@ -192,3 +192,4 @@ footer ul li a {
 footer ul li a:hover {
     text-decoration: underline;
 }
+

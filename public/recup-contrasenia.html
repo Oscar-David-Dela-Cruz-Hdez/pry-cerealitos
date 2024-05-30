@@ -28,8 +28,12 @@
         <form class="formulario-recuperacion">
             <h2>Recuperación de Contraseña</h2>
             <div class="grupo-formulario">
-                <label for="respuesta">Introduce la respuesta</label>
-                <input type="text" id="respuesta" name="recuperacion" required>
+                <label for="pregunta">Pregunta Secreta:</label>
+                <input type="text" id="pregunta" name="pregunta" value="¿Nombre de tu mascota?" disabled>
+            </div>
+            <div class="grupo-formulario">
+                <label for="respuesta">Introduce la respuesta:</label>
+                <input type="text" id="respuesta" name="respuesta" required>
             </div>
             <button type="button" id="verificar-respuesta">Finalizar</button>
         </form>
@@ -49,7 +53,7 @@
                     <label for="confirmar-contrasena">Confirmar Contraseña</label>
                     <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required>
                 </div>
-                <button type="button" class="btn-cambiar-contrasena">Cambiar Contraseña</button>
+                <button type="submit">Cambiar Contraseña</button>
             </form>
         </div>
     </div>
