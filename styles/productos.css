@@ -259,3 +259,49 @@ header nav a {
 .modal button:hover {
     background-color: #45a049;
 }
+/* Footer */
+footer {
+    background-color: #8D6E63; /* Marrón Claro pueblo MARRON */
+    color: #FFFFFF;
+    padding: 10px;
+    text-align:justify;
+    display:flexbox;
+    justify-content: space-around; /* Alineación horizontal */
+    margin-top: auto;
+}
+
+.contenedor-abajo {
+    display: flex;
+    flex-wrap: wrap; /* Asegura que los elementos se ajusten si hay demasiados */
+}
+
+.seccion-contacto,
+.seccion-enlaces,
+.seccion-metodos {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    margin: 0 10px; /* Espacio entre secciones */
+}
+
+footer h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+

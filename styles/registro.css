@@ -72,7 +72,7 @@ header nav a:hover {
     background-color: #FFB300; /* Color de hover */
 }
 
-/****************************************************************++*/
+/* Contenedor de Registro */
 .contenedor-login {
     display: flex;
     justify-content: center;
@@ -143,7 +143,7 @@ header nav a:hover {
 .formulario-login p a:hover {
     text-decoration: underline;
 }
-/* Footer */
+/**Aqui va lo del foder **/
 footer {
     background-color: #8D6E63; /* Marrón Claro pueblo MARRON */
     color: #FFFFFF;
